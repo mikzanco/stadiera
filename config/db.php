@@ -34,6 +34,6 @@ return [
             "descrizione" => "Letto di Cappucci e Mele che accolgono un Tomino servito caldo con Miele e Noci",
             "allegeni" => "1, 7, 8",
             "prezzo" => "11",
-        ]
+        ],
     ]
-]
+];
