@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('type', 20);
             $table->string('image');
             $table->string('description');
+            $table->string('allergens')->nullable;
             $table->string('price', 100);
             $table->timestamps();
         });
