@@ -19,13 +19,13 @@ class DishesTableSeeder extends Seeder
             $new_dish = new Dish();
             $new_dish->title = $dish_item['titolo'];
             $new_dish->slug = Dish::generateSlug($new_dish->title);
-            $new_dish->type = $dish_item['tipo']
+            $new_dish->type = $dish_item['tipo'];
             $new_dish->image = $dish_item['src'];
             $new_dish->description = $dish_item['descrizione'];
             $new_dish->allergens = $dish_item['allergeni'];
             $new_dish->price = $dish_item['prezzo'];
-
+            $new_dish->save();
         }
-        dump($array_dishes);
+        // dump($array_dishes);
     }
 }
