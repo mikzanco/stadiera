@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('slug', 110)->unique();
             $table->string('type', 20);
             $table->string('image');
-            $table->string('description');
+            $table->text('description');
             $table->string('allergens')->nullable;
             $table->string('price', 100);
             $table->timestamps();

@@ -16,10 +16,10 @@ class Dish extends Model
 
         $new_slug = $slug;
         $c=1;
-        $museum_exists = Dish::where('slug', $slug)->first();
-        while($Dish_exists){
+        $dish_exists = Dish::where('slug', $slug)->first();
+        while($dish_exists){
             $slug = $new_slug . '-' .$c;
-            $Dish_exists = Dish::where('slug', $slug)->first();
+            $dish_exists = Dish::where('slug', $slug)->first();
             $c++;
 
 
